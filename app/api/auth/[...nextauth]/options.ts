@@ -13,16 +13,11 @@ export const options: NextAuthOptions = {
         password: { label: 'Password', type: 'password', placeholder: 'password' },
       },
       async authorize(credentials) {
-        // const user = { id: 1, username: 'Johan', password: 'test' }
         const user = await prisma.user.findUnique({
           where: {
             username: credentials?.username,
           },
         })
-
-        // if (credentials?.username === user.username && credentials?.password === user.password) {
-        //   return user
-        // }
 
         if (user && bcrypt.compareSync(credentials!.password, user.passwordHash)) {
           return {
