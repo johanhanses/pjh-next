@@ -11,12 +11,12 @@ export default async function Home() {
       <h1 className="mb-8 text-xl">Tjena</h1>
 
       {session ? (
-        <p>
-          You are logged in{' '}
+        <>
+          <p>You are logged in as {session?.user?.name}</p>
           <Link href="/api/auth/signout" className="underline text-blue-500">
             Log out
           </Link>
-        </p>
+        </>
       ) : (
         <p>
           You are not logged in{' '}
