@@ -9,6 +9,7 @@ export const options: NextAuthOptions = {
         username: { label: 'Username', type: 'text', placeholder: 'username' },
         password: { label: 'Password', type: 'password', placeholder: 'password' },
       },
+      // @ts-ignore
       async authorize(credentials) {
         const user = { id: 1, username: 'Johan', password: 'test' }
 
