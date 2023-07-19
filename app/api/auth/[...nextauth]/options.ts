@@ -1,4 +1,4 @@
-import { prisma } from '@/app/lib/database'
+import { prisma } from '@/lib/database'
 import { User } from '@prisma/client'
 import bcrypt from 'bcrypt'
 import { NextAuthOptions } from 'next-auth'
