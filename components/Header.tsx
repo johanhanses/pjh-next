@@ -8,8 +8,8 @@ export const Header = async () => {
   const session = await getServerSession(options)
 
   return (
-    <header className="mx-8 py-8 animate-in fade-in zoom-in slide-in-from-top-8 duration-700">
-      <div className="navbar bg-base-100 rounded-xl">
+    <header>
+      <div className="navbar bg-base-100 animate-in fade-in slide-in-from-top-8 duration-700">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost normal-case text-xl">
             Pjh
