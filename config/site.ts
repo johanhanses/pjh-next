@@ -3,9 +3,9 @@ export type SiteConfig = typeof siteConfig
 export const siteConfig = {
   name: 'Pjh',
   description:
-    'Pjh home. Web developer, Apsiring Data Viz, JavaScript, TypeScript, GraphQL, React, Nextjs, Remix, Nodejs, Python, Vuejs, Svelte',
-  // url: "https://tx.shadcn.com",
-  // ogImage: "https://tx.shadcn.com/og.jpg",
+    'Pjh home. Web developer and apsiring Data Viz using JavaScript, TypeScript, GraphQL, React, Nextjs, Remix, Nodejs, Python, Vuejs, Svelte',
+  url: 'https://johanhanses.com',
+  // ogImage: "https://johanhanses.com/og.jpg",
   mainLinks: [
     {
       title: 'Home',
@@ -25,7 +25,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: 'https://twitter.com/shadcn',
-    github: 'https://github.com/shadcn/taxonomy',
+    linkedin: 'https://www.linkedin.com/in/johanhanses',
+    github: 'https://github.com/johanhanses',
   },
 }

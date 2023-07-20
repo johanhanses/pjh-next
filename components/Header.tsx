@@ -1,26 +1,22 @@
-import { options } from '@/app/api/auth/[...nextauth]/options'
-import { siteConfig } from '@/config/site'
-import { getServerSession } from 'next-auth'
 import Link from 'next/link'
-import { NavLinks } from './NavLinks'
 
-export const Header = async () => {
-  const session = await getServerSession(options)
-
+export const Header = () => {
   return (
-    <header>
-      <div className="navbar bg-base-100 animate-in fade-in slide-in-from-top-8 duration-700">
-        <div className="flex-1">
-          <Link href="/" className="btn btn-ghost normal-case text-xl">
-            Pjh
-          </Link>
-        </div>
-        <div className="flex-none">
-          <ul className="menu menu-horizontal px-1 space-x-2">
-            <NavLinks links={siteConfig.mainLinks} session={session} />
-          </ul>
-        </div>
-      </div>
+    <header className="z-40 flex w-full flex-col gap-2 md:flex-row md:justify-between">
+      <Link href="mailto:johanhanses@gmail.com" className="hover:text-neutral-100">
+        johanhanses@gmail.com
+      </Link>
+
+      <nav role="navigation">
+        <ul role="list" className="flex flex-row gap-2">
+          <li>
+            <Link href="/" className="hover:text-neutral-100 text-neutral-100">
+              Home
+            </Link>
+          </li>
+          {/* <li>/</li> */}
+        </ul>
+      </nav>
     </header>
   )
 }
