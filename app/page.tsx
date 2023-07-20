@@ -4,7 +4,7 @@ export default async function Home() {
       <h1 className="text-3xl text-neutral-100">Pjh</h1>
       <p className="max-w-[60ch] leading-6">
         A <strong className="font-normal text-orange-500">software developer</strong> using
-        TypeScript, Node, React, GraphQL, Next and Remix. Currently learning data vizualisations
+        TypeScript, Node, React, GraphQL, Next and Remix. Currently learning data visualisations
         with D3. Work is at{' '}
         <a
           href="https://www.digitaltvilling.se"
